@@ -70,7 +70,7 @@ class InstallationCommand extends Command
             if (($roles->isEmpty()) ||
                 (!(($roles[0]->name === 'Administrator') &&
                     ($roles[1]->name === 'Employee') &&
-                    ($roles[2]->name === 'Supervisor')))) {
+                    ($roles[2]->name === 'Labor union')))) {
                 $this->error(__('The installer doesn\'t find some required roles. Please, execute the migration first.'));
                 exit(1);
             }
